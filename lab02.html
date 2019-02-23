@@ -11,9 +11,19 @@
 
 
         var vehicleName='Toyota';
+
         function printVehicleNameOuter() {
             console.log(this.vehicleName);
         }
+        printVehicleNameOuter();
+
+        function Vehicle(){
+            vehicleName='Nissan',
+            printVehicleNameInner = printVehicleNameOuter()
+        };
+
+        var audi= new Vehicle();
+         vehicle.printVehicleNameInner();
 
 
     </script>
