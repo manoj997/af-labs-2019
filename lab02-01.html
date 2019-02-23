@@ -19,7 +19,7 @@
         printVehicleNameOuter();
 
 
-        var Vehicle={
+        var vehicle={
             vehicleName: 'Nissan',
             printVehicleNameInner:function () {
                 return function () {
@@ -28,8 +28,10 @@
             }
         };
 
-        Vehicle.printVehicleNameInner();
+        //vehicle.printVehicleNameInner();
 
+        var execute=vehicle.printVehicleNameInner().bind(vehicle);
+        execute();
 
     </script>
 </head>
