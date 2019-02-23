@@ -15,15 +15,20 @@
         function printVehicleNameOuter() {
             console.log(this.vehicleName);
         }
+
         printVehicleNameOuter();
 
-        function Vehicle(){
-            vehicleName='Nissan',
-            printVehicleNameInner = printVehicleNameOuter()
+
+        var Vehicle={
+            vehicleName: 'Nissan',
+            printVehicleNameInner:function () {
+                return function () {
+                    console.log(this.vehicleName)
+                }
+            }
         };
 
-        var audi= new Vehicle();
-         vehicle.printVehicleNameInner();
+        Vehicle.printVehicleNameInner();
 
 
     </script>
