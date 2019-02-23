@@ -2,8 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>JS -03</title>
 </head>
+<script type="text/javascript">
+    function fetchUsers() {
+        fetch('https://api.github.com/users').then(function (response) {
+            return response.json();
+
+        }).then(function (json) {
+            console.log(json);
+        });
+    }
+    fetchUsers();
+</script>
 <body>
 
 </body>
