@@ -26504,7 +26504,7 @@ function (_Component) {
 
   _createClass(AddUser, [{
     key: "onNameChange",
-    value: function onNameChange() {
+    value: function onNameChange(event) {
       event.preventDefault();
       event.stopPropagation();
       this.name = event.target.value;
@@ -26765,7 +26765,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33663" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36073" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
