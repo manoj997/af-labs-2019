@@ -10,4 +10,4 @@ const User= props=>{
     </tr>
 };
 
-export default user;
+export default User;

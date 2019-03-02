@@ -26465,7 +26465,7 @@ var User = function User(props) {
   return _react.default.createElement("tr", null, _react.default.createElement("td", null, user.id), _react.default.createElement("td", null, user.name));
 };
 
-var _default = user;
+var _default = User;
 exports.default = _default;
 },{"react":"node_modules/react/index.js"}],"Users.jsx":[function(require,module,exports) {
 "use strict";
