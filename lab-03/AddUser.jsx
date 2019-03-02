@@ -1,7 +1,7 @@
 'use strict';
 
-import React,{Component} from 'react';
-import PropTypes from 'prop-types';
+import React, {Component} from 'react';
+import PropTypes from "prop-types";
 
 export default class AddUser extends Component{
     static get propTypes(){
@@ -16,7 +16,7 @@ export default class AddUser extends Component{
     }
 
 
-    onNameChange(){
+    onNameChange(event){
         event.preventDefault();
         event.stopPropagation();
         this.name=event.target.value;
