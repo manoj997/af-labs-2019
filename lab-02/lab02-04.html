@@ -13,9 +13,9 @@
 
         Vehicle.prototype.drive= function () {
             console.log('Vehicle is driving');
-        }
+        };
 
-        var vehicle=new Vehicle('Audi');
+       // var vehicle=new Vehicle('Audi');
 
         function Car(type) {
             Vehicle.call(this,type);
@@ -26,7 +26,7 @@
 
         Car.prototype.balanceWheels=function () {
             console.log('Wheels are balanced');
-        }
+        };
 
         var car= new Car('Audi RS 5');
         car.drive();
