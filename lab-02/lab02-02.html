@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <title>JS</title>
     <script type="text/javascript">
+        //understating closure
+        function taxCalculator(percentage) {
+            return function (amount) {
+                return  amount*percentage/100;
+            }
+        }
+        var calc= taxCalculator(15);
+        console.log(calc(10));
+
 
 
     </script>
 </head>
 <body>
 
-</body>
+</body >
 </html>
